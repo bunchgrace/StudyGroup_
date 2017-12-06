@@ -22,7 +22,6 @@ public class MainActivity extends AppCompatActivity {
 
 
         createEvent = (Button) findViewById(R.id.create_event_button);
-
         createEvent.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 intent = new Intent(MainActivity.this, Create_Event.class);
@@ -34,6 +33,22 @@ public class MainActivity extends AppCompatActivity {
         groupPage.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v) {
                 intent = new Intent(MainActivity.this, groupPage.class);
+                startActivity(intent);
+            }
+        });
+
+        joinGroup = (Button) findViewById(R.id.join_group_button);
+        groupPage.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v) {
+                intent = new Intent(MainActivity.this, joinGroup.class);
+                startActivity(intent);
+            }
+        });
+
+        createGroup = (Button) findViewById(R.id.create_group_button);
+        groupPage.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v) {
+                intent = new Intent(MainActivity.this, createGroup.class);
                 startActivity(intent);
             }
         });
