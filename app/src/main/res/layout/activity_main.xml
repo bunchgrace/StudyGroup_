@@ -44,4 +44,14 @@
         android:layout_below="@id/create_event_button"
         />
 
+    <Button
+        android:id="@+id/group_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/join_event_button"
+        android:layout_marginTop="25dp"
+        android:text="Group Page" />
+
 </RelativeLayout>
