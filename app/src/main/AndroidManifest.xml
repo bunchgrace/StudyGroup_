@@ -16,13 +16,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".Create_Event"
-           >
+        <activity android:name=".Create_Event">
             <intent-filter>
-                <action android:name="android.intent.action.DEFAULT"/>
+                <action android:name="android.intent.action.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity android:name=".joinGroup" />
+        <activity android:name=".searchResult" />
+        <activity android:name=".createGroup"></activity>
     </application>
 
 </manifest>
