@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.fsu.cs.mobile.studygroup_.joinGroup">
+
+    <TextView
+        android:id="@+id/courseCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="59dp"
+        android:text="Course Code"
+        android:textSize="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/courseCodeInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/courseCode"
+        android:layout_alignStart="@+id/courseCode"
+        android:layout_below="@+id/courseCode"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:inputType="textShortMessage"
+        android:text="Course Code"/>
+
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search Groups"
+        android:layout_marginTop="52dp"
+        android:layout_below="@+id/courseCodeInput"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
