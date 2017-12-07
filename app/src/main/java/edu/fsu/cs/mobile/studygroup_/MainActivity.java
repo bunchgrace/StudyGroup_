@@ -23,15 +23,15 @@ public class MainActivity extends AppCompatActivity {
 
 
         createEvent = (Button) findViewById(R.id.create_event_button);
-        createEvent.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
+        createEvent.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
                 intent = new Intent(MainActivity.this, Create_Event.class);
                 startActivity(intent);
             }
         });
 
-      createGroup = (Button) findViewById(R.id.create_group_button);
-      createGroup.setOnClickListener(new View.OnClickListener() {
+        createGroup = (Button) findViewById(R.id.create_group_button);
+        createGroup.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 intent = new Intent(MainActivity.this, create_group.class);
                 startActivity(intent);
@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         groupPage = (Button) findViewById(R.id.group_page);
-        groupPage.setOnClickListener(new View.OnClickListener(){
+        groupPage.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 intent = new Intent(MainActivity.this, groupPage.class);
                 startActivity(intent);
@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         groupPage = (Button) findViewById(R.id.group_page);
-        groupPage.setOnClickListener(new View.OnClickListener(){
+        groupPage.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 intent = new Intent(MainActivity.this, groupPage.class);
                 startActivity(intent);
@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         joinGroup = (Button) findViewById(R.id.join_group_button);
-        groupPage.setOnClickListener(new View.OnClickListener(){
+        groupPage.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 intent = new Intent(MainActivity.this, joinGroup.class);
                 startActivity(intent);
@@ -63,11 +63,15 @@ public class MainActivity extends AppCompatActivity {
         });
 
         createGroup = (Button) findViewById(R.id.create_group_button);
-        groupPage.setOnClickListener(new View.OnClickListener(){
+        groupPage.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 intent = new Intent(MainActivity.this, createGroup.class);
+            }
+        });
+
+
         profile = (Button) findViewById(R.id.profile_button);
-        profile.setOnClickListener(new View.OnClickListener(){
+        profile.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 intent = new Intent(MainActivity.this, ProfileActivity.class);
                 startActivity(intent);
@@ -75,11 +79,6 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
-
-
-
-
-
 
 
 }
