@@ -7,51 +7,83 @@
     tools:context="edu.fsu.cs.mobile.studygroup_.MainActivity">
 
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="StudyGroup"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:layout_marginTop="40dp"
+        android:textColor="#ff0000"
+        android:textStyle="bold"
+        android:id="@+id/welcome"
+        />
 
     <Button
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/welcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/profile_button"
-        android:text="Profile"
+        android:text="@string/profile"
+        android:textStyle="bold"
+
         />
     <Button
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Create Group"
+        android:text="@string/create_group"
         android:id="@+id/create_group_button"
         android:layout_below="@id/profile_button"
-       />
+        android:textStyle="bold"
+
+        />
     <Button
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Join Group"
+        android:text="@string/join_group"
         android:id="@+id/join_group_button"
         android:layout_below="@id/create_group_button"
-       />
+        android:textStyle="bold"
+
+        />
     <Button
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Create Event"
+        android:text="@string/create_event"
         android:layout_below="@id/join_group_button"
         android:id="@+id/create_event_button"
-        android:onClick="createE"
-      />
+        android:textStyle="bold"
+
+        />
     <Button
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Join Event"
+        android:text="@string/join_event"
         android:id="@+id/join_event_button"
         android:layout_below="@id/create_event_button"
+        android:textStyle="bold"
+
         />
 
     <Button
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
         android:id="@+id/group_page"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
         android:layout_below="@+id/join_event_button"
-        android:layout_marginTop="25dp"
-        android:text="Group Page" />
+        android:text="@string/group_page"
+        android:textStyle="bold"
+        />
 
 </RelativeLayout>

@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
     Button createEvent;
     Button joinEvent;
     Button groupPage;
+    Button profile;
     Intent intent;
 
     @Override
@@ -30,10 +31,27 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
         groupPage = (Button) findViewById(R.id.group_page);
         groupPage.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v) {
                 intent = new Intent(MainActivity.this, groupPage.class);
+                startActivity(intent);
+            }
+        });
+
+        groupPage = (Button) findViewById(R.id.group_page);
+        groupPage.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v) {
+                intent = new Intent(MainActivity.this, groupPage.class);
+                startActivity(intent);
+            }
+        });
+
+        profile = (Button) findViewById(R.id.profile_button);
+        profile.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v) {
+                intent = new Intent(MainActivity.this, ProfileActivity.class);
                 startActivity(intent);
             }
         });

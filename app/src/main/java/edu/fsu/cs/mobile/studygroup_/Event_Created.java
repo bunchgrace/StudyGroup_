@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import org.w3c.dom.Text;
 
@@ -13,6 +14,10 @@ public class Event_Created extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.event_created);
+
+        //show toast to let user know they got 20 points
+        Toast.makeText(Event_Created.this, "+ 20 points!",
+                Toast.LENGTH_LONG).show();
 
             Intent intent1 = getIntent();
         //if(getIntent().hasExtra("com.example.khawly.myapplication.quicklauncher.event")){
