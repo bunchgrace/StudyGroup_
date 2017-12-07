@@ -14,6 +14,8 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 
 
 public class Create_Event extends AppCompatActivity {
@@ -74,6 +76,51 @@ public class Create_Event extends AppCompatActivity {
         //add 20 points for creating an event
                 mDatabase.child("users").child(UID).child("points").setValue(temp+20);
 
+
+                SimpleDateFormat parser = new SimpleDateFormat("mm/dd/yyyy");
+                SimpleDateFormat parsert = new SimpleDateFormat("hh:mm aa");
+                java.util.Date time = null;
+                try {
+                    time = parsert.parse(tm);
+                } catch (ParseException e){
+                e.printStackTrace();
+                }
+
+                java.util.Date date = null;
+                try {
+                    date = parser.parse(dt);
+                } catch (ParseException e) {
+                    e.printStackTrace();
+                }
+
+                SimpleDateFormat month = new SimpleDateFormat("mm");
+                SimpleDateFormat day = new SimpleDateFormat("dd");
+                SimpleDateFormat year = new SimpleDateFormat("yyyy");
+
+                SimpleDateFormat hour = new SimpleDateFormat("hh");
+                SimpleDateFormat minute = new SimpleDateFormat("mm");
+                SimpleDateFormat ampm = new SimpleDateFormat("aa");
+
+                String month1 = month.format(date);
+                String day1 = day.format(date);
+                String year1 = year.format(date);
+
+                String hour1 = hour.format(time);
+                String minute1 = minute.format(time);
+                String ampm1 = ampm.format(time);
+
+                if(ampm1.equalsIgnoreCase("pm")) {
+                    int hour2 = Integer.parseInt(hour1);
+                    hour2 = hour2 + 12;
+                    hour1 = String.valueOf(hour2);
+                }
+
+                if(hour1.equalsIgnoreCase("12") && ampm1.equalsIgnoreCase("am"))
+                {
+                    int hour2 = Integer.parseInt(hour1);
+                    hour2 = hour2 - 12;
+                    hour1 = String.valueOf(hour2);
+                }
 
                 Intent intent1 = new Intent(Create_Event.this, Event_Created.class);
               intent1.putExtra("event", en);

@@ -5,7 +5,7 @@
     android:id="@+id/coordinatorLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.khawly.myapplication.Create_Event">
+    tools:context=".Create_Event">
 
     <EditText
         android:id="@+id/Eventname"
@@ -32,7 +32,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:ems="10"
-        android:hint="Enter Date"
+        android:hint="Enter Date: mm/dd/yyyy"
         android:inputType="date"
         android:singleLine="false"
         app:layout_constraintBottom_toTopOf="@+id/Location"
@@ -108,8 +108,8 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:ems="10"
-        android:hint="Enter Time"
-        android:inputType="time"
+        android:hint="Enter Time: hh:mm pm"
+        android:inputType="text|time"
         app:layout_constraintBottom_toTopOf="@+id/Location"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
