@@ -29,7 +29,7 @@
         android:layout_marginTop="12dp"
         android:ems="10"
         android:inputType="textShortMessage"
-        android:text="Course Code" />
+        android:hint="Course Code" />
 
     <TextView
         android:id="@+id/viewGroup"
@@ -52,7 +52,7 @@
         android:layout_marginTop="20dp"
         android:ems="10"
         android:inputType="textShortMessage"
-        android:text="Group Name" />
+        android:hint="Group Name" />
 
     <TextView
         android:id="@+id/viewInstructor"
@@ -75,7 +75,7 @@
         android:layout_marginTop="13dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Instructor" />
+        android:hint="Instructor" />
 
     <Button
         android:id="@+id/create"
