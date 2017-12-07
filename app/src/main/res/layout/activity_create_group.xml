@@ -1,30 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="edu.fsu.cs.mobile.studygroup_.create_group">
+    tools:context="edu.fsu.cs.mobile.studygroup_.createGroup">
 
-    <Button
-        android:id="@+id/create_group"
+    <TextView
+        android:id="@+id/courseView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="123dp"
-        android:text="Create Group" />
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="38dp"
+        android:text="Course Code"
+        android:textSize="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <EditText
-        android:id="@+id/course_num"
+        android:id="@+id/createCourseCode"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/create_group"
-        android:layout_alignEnd="@+id/create_group"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/create_group"
-        android:layout_marginBottom="155dp"
-        android:hint="Enter Course Number" />
+        android:layout_alignLeft="@+id/courseView"
+        android:layout_alignStart="@+id/courseView"
+        android:layout_below="@+id/courseView"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="textShortMessage"
+        android:text="Course Code" />
 
-</android.widget.RelativeLayout>
+    <TextView
+        android:id="@+id/viewGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/createCourseCode"
+        android:layout_alignStart="@+id/createCourseCode"
+        android:layout_below="@+id/createCourseCode"
+        android:layout_marginTop="25dp"
+        android:text="Group Name"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/createGroupName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/viewGroup"
+        android:layout_alignStart="@+id/viewGroup"
+        android:layout_below="@+id/viewGroup"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textShortMessage"
+        android:text="Group Name" />
+
+    <TextView
+        android:id="@+id/viewInstructor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Instructor"
+        android:textSize="20dp"
+        android:layout_below="@+id/createGroupName"
+        android:layout_alignLeft="@+id/createGroupName"
+        android:layout_alignStart="@+id/createGroupName"
+        android:layout_marginTop="26dp" />
+
+    <EditText
+        android:id="@+id/createInstructor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/viewInstructor"
+        android:layout_alignStart="@+id/viewInstructor"
+        android:layout_below="@+id/viewInstructor"
+        android:layout_marginTop="13dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Instructor" />
+
+    <Button
+        android:id="@+id/create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="76dp" />
+
+</RelativeLayout>

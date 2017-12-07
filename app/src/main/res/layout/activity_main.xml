@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="edu.fsu.cs.mobile.studygroup_.MainActivity">
-
-
+  
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -18,7 +17,6 @@
         android:textStyle="bold"
         android:id="@+id/welcome"
         />
-
     <Button
         android:layout_marginTop="20dp"
         android:layout_centerHorizontal="true"
