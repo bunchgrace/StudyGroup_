@@ -22,10 +22,18 @@ public class MainActivity extends AppCompatActivity {
 
 
         createEvent = (Button) findViewById(R.id.create_event_button);
+        createGroup = (Button) findViewById(R.id.create_group_button);
 
         createEvent.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 intent = new Intent(MainActivity.this, Create_Event.class);
+                startActivity(intent);
+            }
+        });
+
+        createGroup.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                intent = new Intent(MainActivity.this, create_group.class);
                 startActivity(intent);
             }
         });
