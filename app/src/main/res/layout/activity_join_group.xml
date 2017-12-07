@@ -29,7 +29,7 @@
         android:layout_marginTop="17dp"
         android:ems="10"
         android:inputType="textShortMessage"
-        android:text="Course Code"/>
+        android:hint="Course Code"/>
 
     <Button
         android:id="@+id/searchButton"
