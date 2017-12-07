@@ -17,7 +17,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".Create_Event">
+
         <activity android:name=".MainActivity"
             >
             <intent-filter>
@@ -25,8 +25,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".Create_Event"
-           >
+        <activity android:name=".Create_Event">
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT" />
             </intent-filter>
@@ -47,9 +46,8 @@
         </activity>
         <activity android:name=".createGroup">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.DEFAULT" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
@@ -83,6 +81,8 @@
                 <action android:name="android.intent.action.DEFAULT"/>
             </intent-filter>
         </activity>
+
+
     </application>
 
 </manifest>
