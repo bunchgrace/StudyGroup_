@@ -35,8 +35,8 @@ public class create_group extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_group);
 
-        createGroup = (Button) findViewById(R.id.create_group);
-        courseNum = (EditText) findViewById(R.id.course_num);
+        //createGroup = (Button) findViewById(R.id.create_group);
+        //courseNum = (EditText) findViewById(R.id.course_num);
 
         //to increment points - grace
         auth= FirebaseAuth.getInstance();

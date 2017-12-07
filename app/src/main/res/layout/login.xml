@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:name="edu.fsu.cs.mobile.studygroup.loginActivity"
+    tools:context="edu.fsu.cs.mobile.studygroup_.loginActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to StudyGroup!"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:layout_marginTop="40dp"
+        android:textColor="#ff0000"
+        android:textStyle="bold"
+        android:id="@+id/welcome"
+       />
+<!--Username editext id = @+id/emailLog-->
+
+    <EditText
+        android:layout_width="250sp"
+        android:layout_height="40sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/welcome"
+        android:layout_marginTop="100dp"
+        android:id="@+id/emailLog"
+        android:hint="@string/email"
+        android:gravity="center"
+
+        />
+<!-- edit text for password, id=@+id/password-->
+    <EditText
+        android:layout_width="250sp"
+        android:layout_height="40sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/emailLog"
+        android:layout_marginTop="20dp"
+        android:id="@+id/password"
+        android:hint="@string/password"
+        android:gravity="center"
+        android:inputType="textPassword"
+
+        />
+
+    <!--Register button id=@+id/register-->
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:layout_below="@id/password"
+        android:layout_marginTop="50dp"
+        android:id="@+id/register"
+        android:layout_marginLeft="55dp"
+        android:onClick="registerPage"/>
+
+    <!-- Login button id=@+id/login-->
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:layout_below="@id/password"
+        android:layout_toRightOf="@id/register"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="100dp"
+        android:onClick="loginToMain"
+        />
+
+
+
+</RelativeLayout>

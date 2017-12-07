@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:name="edu.fsu.cs.mobile.studygroup.registerActivity"
+    tools:context="edu.fsu.cs.mobile.studygroup_.registerActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register for StudyGroup!"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ff0000"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_marginTop="40dp"/>
+
+    <!--first name id=@+id/fname -->
+    <EditText
+        android:id="@+id/fname"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:hint="@string/fname"
+        android:gravity="center"/>
+
+    <!-- Last name id=@+id/lname-->
+    <EditText
+        android:id="@+id/lname"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/fname"
+        android:layout_marginTop="10dp"
+        android:hint="@string/lname"
+        android:gravity="center"/>
+
+    <!-- email id=@+id/email-->
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/lname"
+        android:layout_marginTop="10dp"
+        android:hint="@string/email"
+        android:gravity="center"/>
+
+    <!-- username id=@+id/username_reg-->
+
+    <EditText
+        android:id="@+id/username_reg"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/email"
+        android:layout_marginTop="10dp"
+        android:hint="@string/username"
+        android:gravity="center"
+        />
+
+    <!-- password id=@+id/password_reg-->
+
+    <EditText
+        android:id="@+id/password_reg"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/username_reg"
+        android:layout_marginTop="10dp"
+        android:hint="@string/password"
+        android:gravity="center"
+        android:inputType="textPassword"/>
+
+    <!-- confirm password id=@+id/confirm_pass-->
+
+    <EditText
+        android:id="@+id/confirm_pass"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/password_reg"
+        android:layout_marginTop="10dp"
+        android:hint="@string/conf_password"
+        android:gravity="center"
+        android:inputType="textPassword"/>
+
+    <!-- Register button id=@+id/register_reg-->
+
+    <Button
+        android:id="@+id/register_reg"
+        android:onClick="regToMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/confirm_pass"
+        android:layout_marginTop="10dp"
+        android:text="@string/register"/>
+</RelativeLayout>

@@ -73,17 +73,18 @@ public class Create_Event extends AppCompatActivity {
                 FBLocation.setValue(loc);
 
 
-        //add 20 points for creating an event
-                mDatabase.child("users").child(UID).child("points").setValue(temp+20);
+                //add 20 points for creating an event
+                mDatabase.child("users").child(UID).child("points").setValue(temp + 20);
 
 
                 SimpleDateFormat parser = new SimpleDateFormat("mm/dd/yyyy");
                 SimpleDateFormat parsert = new SimpleDateFormat("hh:mm aa");
+
                 java.util.Date time = null;
                 try {
                     time = parsert.parse(tm);
-                } catch (ParseException e){
-                e.printStackTrace();
+                } catch (ParseException e) {
+                    e.printStackTrace();
                 }
 
                 java.util.Date date = null;
@@ -109,25 +110,24 @@ public class Create_Event extends AppCompatActivity {
                 String minute1 = minute.format(time);
                 String ampm1 = ampm.format(time);
 
-                if(ampm1.equalsIgnoreCase("pm")) {
+                if (ampm1.equalsIgnoreCase("pm")) {
                     int hour2 = Integer.parseInt(hour1);
                     hour2 = hour2 + 12;
                     hour1 = String.valueOf(hour2);
                 }
 
-                if(hour1.equalsIgnoreCase("12") && ampm1.equalsIgnoreCase("am"))
-                {
+                if (hour1.equalsIgnoreCase("12") && ampm1.equalsIgnoreCase("am")) {
                     int hour2 = Integer.parseInt(hour1);
                     hour2 = hour2 - 12;
                     hour1 = String.valueOf(hour2);
                 }
 
                 Intent intent1 = new Intent(Create_Event.this, Event_Created.class);
-              intent1.putExtra("event", en);
-              intent1.putExtra("date", dt);
-              intent1.putExtra("time", tm);
-              intent1.putExtra("location", loc);
-              startActivity(intent1);
+                intent1.putExtra("event", en);
+                intent1.putExtra("date", dt);
+                intent1.putExtra("time", tm);
+                intent1.putExtra("location", loc);
+                startActivity(intent1);
             }
         });
     }
