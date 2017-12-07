@@ -16,6 +16,8 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.HashMap;
+import java.util.Map;
 
 
 public class Create_Event extends AppCompatActivity {
@@ -67,10 +69,19 @@ public class Create_Event extends AppCompatActivity {
                 DatabaseReference FBTime = database.child("Time");
                 DatabaseReference FBLocation = database.child("Location");
 
+                Map<String, Object> map = new HashMap<>();
+                map.put("event", en);
+                map.put("date", dt);
+                map.put("time", tm);
+                map.put("location", loc);
+
+
+                mDatabase.child("events").child(en + loc).setValue(map);
+/*
                 FBEventname.setValue(en);
                 FBDate.setValue(dt);
                 FBTime.setValue(tm);
-                FBLocation.setValue(loc);
+                FBLocation.setValue(loc);*/
 
 
                 //add 20 points for creating an event
