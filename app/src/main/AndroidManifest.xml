@@ -32,16 +32,16 @@
         </activity>
         <activity android:name=".joinGroup">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.DEFAULT" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
+              
             </intent-filter>
         </activity>
         <activity android:name=".searchResult">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.DEFAULT" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
+         
             </intent-filter>
         </activity>
         <activity android:name=".createGroup">
