@@ -71,7 +71,7 @@ public class Create_Event extends AppCompatActivity {
                 FBLocation.setValue(loc);
 
 
-        //add 30 points for creating an event
+        //add 20 points for creating an event
                 mDatabase.child("users").child(UID).child("points").setValue(temp+20);
 
 
