@@ -38,14 +38,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });*/
-
+/*
         groupPage = (Button) findViewById(R.id.group_page);
         groupPage.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 intent = new Intent(MainActivity.this, groupPage.class);
                 startActivity(intent);
             }
-        });
+        });*/
 
 
 

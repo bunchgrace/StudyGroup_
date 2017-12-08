@@ -16,6 +16,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="34dp" />
 
+
     <Button
         android:id="@+id/chat"
         android:layout_width="wrap_content"

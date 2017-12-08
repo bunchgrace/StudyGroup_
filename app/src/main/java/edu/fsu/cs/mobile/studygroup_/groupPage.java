@@ -12,7 +12,7 @@ import com.google.firebase.database.*;
 public class groupPage extends AppCompatActivity {
 
     TextView textUser1, textUser2, textUser3, textUser4;
-    Button eventButton;
+    //Button eventButton;
 
     DatabaseReference rootRef = FirebaseDatabase.getInstance().getReference();
     DatabaseReference user1Ref = rootRef.child("user");
@@ -21,12 +21,15 @@ public class groupPage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_group_page);
-        eventButton = (Button) findViewById(R.id.events);
+       // eventButton = (Button) findViewById(R.id.events);
         textUser1 = (TextView) findViewById(R.id.user1);
         textUser2 = (TextView) findViewById(R.id.user2);
         textUser3 = (TextView) findViewById(R.id.user3);
         textUser4 = (TextView) findViewById(R.id.user4);
 
+        Toast.makeText(groupPage.this, "+ 30 points!",
+                Toast.LENGTH_LONG).show();
+/*
         eventButton.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -37,7 +40,7 @@ public class groupPage extends AppCompatActivity {
 
             }
 
-        });
+        });*/
     }
 
     private void goToEventPage() {

@@ -72,7 +72,7 @@
         android:textStyle="bold"
 
         />
-
+<!--
     <Button
         android:layout_marginTop="20dp"
         android:layout_centerHorizontal="true"
@@ -82,6 +82,6 @@
         android:layout_below="@+id/join_event_button"
         android:text="@string/group_page"
         android:textStyle="bold"
-        />
+        />-->
 
 </RelativeLayout>
