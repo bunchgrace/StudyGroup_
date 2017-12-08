@@ -36,8 +36,32 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Search Groups"
-        android:layout_marginTop="52dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/courseCodeInput"
+        android:layout_alignEnd="@+id/courseCodeInput"
+        android:layout_marginBottom="134dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Group Name"
+        android:textSize="20dp"
         android:layout_below="@+id/courseCodeInput"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignLeft="@+id/courseCodeInput"
+        android:layout_alignStart="@+id/courseCodeInput" />
+
+    <EditText
+        android:id="@+id/groupName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Group Name" />
 
 </RelativeLayout>
