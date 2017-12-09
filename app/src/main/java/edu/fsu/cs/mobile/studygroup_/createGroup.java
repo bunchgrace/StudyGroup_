@@ -63,9 +63,9 @@ public class createGroup extends AppCompatActivity {
     }
         void groupCreate(){
             Map<String, Object> map = new HashMap<>();
-            map.put("courseCode", courseCode.getText().toString());
-            map.put("groupName", groupName.getText().toString());
-            map.put("instructor", instructor.getText().toString());
+            map.put("courseCode", courseCode.getText().toString().trim());
+            map.put("groupName", groupName.getText().toString().trim());
+            map.put("instructor", instructor.getText().toString().trim());
             map.put("groupOwner", UID);
 
             mDatabase.child("groups").child(courseCode.getText().toString()+groupName.getText().toString()).setValue(map);
