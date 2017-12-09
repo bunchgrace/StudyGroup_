@@ -1,4 +1,4 @@
-package edu.fsu.cs.mobile.studygroup_;
+package edu.fsu.cs.mobile.studygroup;
 
 public class User{
     private String username;

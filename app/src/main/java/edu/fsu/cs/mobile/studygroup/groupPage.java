@@ -1,10 +1,9 @@
-package edu.fsu.cs.mobile.studygroup_;
+package edu.fsu.cs.mobile.studygroup;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.*;
 import android.content.Intent;
-import android.view.View;
 
 import com.google.firebase.database.*;
 

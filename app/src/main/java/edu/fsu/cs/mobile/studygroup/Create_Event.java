@@ -1,4 +1,4 @@
-package edu.fsu.cs.mobile.studygroup_;
+package edu.fsu.cs.mobile.studygroup;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -57,10 +57,10 @@ public class Create_Event extends AppCompatActivity {
                 EditText Time = (EditText) findViewById(R.id.Time);
                 EditText Location = (EditText) findViewById(R.id.Location);
 
-                String en = Eventname.getText().toString();
-                String dt = Date.getText().toString();
-                String tm = Time.getText().toString();
-                String loc = Location.getText().toString();
+                String en = Eventname.getText().toString().trim();
+                String dt = Date.getText().toString().trim();
+                String tm = Time.getText().toString().trim();
+                String loc = Location.getText().toString().trim();
 
                 DatabaseReference database = FirebaseDatabase.getInstance().getReference();
 

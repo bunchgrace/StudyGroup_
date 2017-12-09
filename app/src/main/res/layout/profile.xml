@@ -3,7 +3,7 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="edu.fsu.cs.mobile.studygroup_.ProfileActivity">
+    tools:context="edu.fsu.cs.mobile.studygroup.ProfileActivity">
 
     <TextView
         android:layout_width="wrap_content"
@@ -26,4 +26,27 @@
         android:textColor="#ff0000"
         android:textStyle="bold"
         android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/points_display"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+        android:text="EXP"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+    <TextView
+        android:id="@+id/level_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/points_display"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="63dp"
+        android:text="LEVEL"
+        android:textAppearance="@android:style/TextAppearance.Material.Large" />
 </RelativeLayout>

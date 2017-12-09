@@ -1,4 +1,4 @@
-package edu.fsu.cs.mobile.studygroup_;
+package edu.fsu.cs.mobile.studygroup;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -26,6 +26,7 @@ public class ProfileActivity  extends AppCompatActivity {
 
     TextView username;
     TextView points;
+    TextView level;
 
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,7 +44,7 @@ public class ProfileActivity  extends AppCompatActivity {
         //sets displayname as username in this fragment  - doesn't work if register first
         points = (TextView) findViewById(R.id.points_display);
         username= (TextView) findViewById(R.id.user_display);
-
+        level= (TextView) findViewById(R.id.level_display);
 
 
 
@@ -68,7 +69,8 @@ public class ProfileActivity  extends AppCompatActivity {
 
                 */
                 points.setText(String.valueOf((Integer) ui.getPoints()));
-
+                String level_text = "LEVEL: " + String.valueOf(getLevel((Integer) ui.getPoints()));
+                level.setText(level_textbun);
 
             }
 
@@ -79,6 +81,21 @@ public class ProfileActivity  extends AppCompatActivity {
         };
         mUserReference.addValueEventListener(userListener);
 
+    }
+
+    //function used to determine user's level
+    protected int getLevel(int points)    {
+        int level = 1;
+        int temp_points = points;
+        int subtract_value = 10;
+
+        for (int i = 0; temp_points > 0; i++)   {
+            temp_points = temp_points - subtract_value;
+            level = level + 1;
+            subtract_value = subtract_value * 2;    //value will grow by 2^level-1 for each level
+        }
+
+        return level;
     }
 
 

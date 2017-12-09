@@ -1,4 +1,4 @@
-package edu.fsu.cs.mobile.studygroup_;
+package edu.fsu.cs.mobile.studygroup;
 
 import android.content.Intent;
 import android.os.Bundle;

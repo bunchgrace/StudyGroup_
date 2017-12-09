@@ -1,4 +1,4 @@
-package edu.fsu.cs.mobile.studygroup_;
+package edu.fsu.cs.mobile.studygroup;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
