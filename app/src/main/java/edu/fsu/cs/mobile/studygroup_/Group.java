@@ -1,4 +1,4 @@
-package edu.fsu.cs.mobile.studygroup;
+package edu.fsu.cs.mobile.studygroup_;
 
 public class Group {
     static private int MAXUSERS = 5;

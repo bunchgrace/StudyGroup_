@@ -1,4 +1,4 @@
-package edu.fsu.cs.mobile.studygroup;
+package edu.fsu.cs.mobile.studygroup_;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

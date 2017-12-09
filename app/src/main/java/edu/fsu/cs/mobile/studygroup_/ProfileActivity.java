@@ -1,4 +1,4 @@
-package edu.fsu.cs.mobile.studygroup;
+package edu.fsu.cs.mobile.studygroup_;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -70,7 +70,7 @@ public class ProfileActivity  extends AppCompatActivity {
                 */
                 points.setText(String.valueOf((Integer) ui.getPoints()));
                 String level_text = "LEVEL: " + String.valueOf(getLevel((Integer) ui.getPoints()));
-                level.setText(level_textbun);
+                level.setText(level_text);
 
             }
 

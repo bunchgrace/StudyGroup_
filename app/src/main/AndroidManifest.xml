@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="edu.fsu.cs.mobile.studygroup">
+    package="edu.fsu.cs.mobile.studygroup_">
 
     <application
         android:allowBackup="true"
@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="edu.fsu.cs.mobile.studygroup.loginActivity">
+        <activity android:name="edu.fsu.cs.mobile.studygroup_.loginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -18,57 +18,57 @@
         </activity>
 
 
-        <activity android:name="edu.fsu.cs.mobile.studygroup.MainActivity"
+        <activity android:name="edu.fsu.cs.mobile.studygroup_.MainActivity"
             >
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT"/>
             </intent-filter>
         </activity>
 
-        <activity android:name="edu.fsu.cs.mobile.studygroup.Create_Event">
+        <activity android:name="edu.fsu.cs.mobile.studygroup_.Create_Event">
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name="edu.fsu.cs.mobile.studygroup.joinGroup">
+        <activity android:name="edu.fsu.cs.mobile.studygroup_.joinGroup">
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT" />
 
             </intent-filter>
         </activity>
-        <activity android:name="edu.fsu.cs.mobile.studygroup.searchResult">
+        <activity android:name="edu.fsu.cs.mobile.studygroup_.searchResult">
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT" />
 
          
             </intent-filter>
         </activity>
-        <activity android:name="edu.fsu.cs.mobile.studygroup.createGroup">
+        <activity android:name="edu.fsu.cs.mobile.studygroup_.createGroup">
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT" />
 
             </intent-filter>
         </activity>
 
-        <activity android:name="edu.fsu.cs.mobile.studygroup.registerActivity"
+        <activity android:name="edu.fsu.cs.mobile.studygroup_.registerActivity"
             >
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT"/>
             </intent-filter>
         </activity>
-        <activity android:name="edu.fsu.cs.mobile.studygroup.groupPage"
+        <activity android:name="edu.fsu.cs.mobile.studygroup_.groupPage"
             >
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT"/>
             </intent-filter>
         </activity>
-        <activity android:name="edu.fsu.cs.mobile.studygroup.Event_Created"
+        <activity android:name="edu.fsu.cs.mobile.studygroup_.Event_Created"
             >
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT"/>
             </intent-filter>
         </activity>
-        <activity android:name="edu.fsu.cs.mobile.studygroup.ProfileActivity"
+        <activity android:name="edu.fsu.cs.mobile.studygroup_.ProfileActivity"
             >
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT"/>
